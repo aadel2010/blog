@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ahmed Adel</title>
-    <link>/tags/</link>
+    <link>https://aadel2010.github.io/blog/tags/</link>
     <description>Recent content in Tags on Ahmed Adel</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aadel2010.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#43;&#43;</title>
-      <link>/tags/c&#43;&#43;/</link>
+      <link>https://aadel2010.github.io/blog/tags/c&#43;&#43;/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/c&#43;&#43;/</guid>
+      <guid>https://aadel2010.github.io/blog/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Templates</title>
-      <link>/tags/templates/</link>
+      <link>https://aadel2010.github.io/blog/tags/templates/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/templates/</guid>
+      <guid>https://aadel2010.github.io/blog/tags/templates/</guid>
       <description></description>
     </item>
   </channel>
