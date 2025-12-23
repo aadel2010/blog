@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.152.2">
+    
+    <script>
+        
+        document.documentElement.classList.add('dark');
+    </script>
+    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<title>
+  
+    Ahmed Adel | Embedded Software Engineer. C/C&#43;&#43;. RTOS. Bare-metal Programming. Parallel Programming. UML
+  
+</title>
+
+
+<meta name="description" content="Software Engineer with 13&#43; years of experience in C/C&#43;&#43; development for bare-metal and RTOS-based systems, covering firmware and embedded applications across multiple engineering-driven industries." />
+<meta name="author" content="Ahmed Adel" />
+<link rel="canonical" href="/" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ahmed Adel | Embedded Software Engineer. C/C&#43;&#43;. RTOS. Bare-metal Programming. Parallel Programming. UML" />
+<meta property="og:description" content="Software Engineer with 13&#43; years of experience in C/C&#43;&#43; development for bare-metal and RTOS-based systems, covering firmware and embedded applications across multiple engineering-driven industries." />
+<meta property="og:url" content="/" />
+<meta property="og:image" content="/images/ahmed-adel-profile.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Ahmed Adel" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ahmed Adel | Embedded Software Engineer. C/C&#43;&#43;. RTOS. Bare-metal Programming. Parallel Programming. UML" />
+<meta name="twitter:description" content="Software Engineer with 13&#43; years of experience in C/C&#43;&#43; development for bare-metal and RTOS-based systems, covering firmware and embedded applications across multiple engineering-driven industries." />
+<meta name="twitter:image" content="/images/ahmed-adel-profile.jpg" />
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+
+    
+    
+    <style>
+ 
+:root {
+   
+  
+  
+  --color-primary: #474A51;
+  --color-second: #1eff00ff;
+  --color-third: #5c76f9ff;
+  
+  
+   
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 80%, white);
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-lighter: color-mix(in srgb, var(--color-primary) 20%, white);
+  
+  --color-second-light: color-mix(in srgb, var(--color-second) 80%, white);
+  --color-second-dark: color-mix(in srgb, var(--color-second) 80%, black);
+  --color-second-lighter: color-mix(in srgb, var(--color-second) 20%, white);
+  
+  --color-third-light: color-mix(in srgb, var(--color-third) 80%, white);
+  --color-third-dark: color-mix(in srgb, var(--color-third) 80%, black);
+  --color-third-lighter: color-mix(in srgb, var(--color-third) 20%, white);
+  
+   
+  --color-gray-50: color-mix(in srgb, var(--color-primary) 5%, white);
+  --color-gray-100: color-mix(in srgb, var(--color-primary) 10%, white);
+  --color-gray-300: color-mix(in srgb, var(--color-primary) 20%, white);
+  --color-gray-400: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-gray-500: color-mix(in srgb, var(--color-primary) 40%, white);
+  --color-gray-600: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-gray-700: color-mix(in srgb, var(--color-primary) 60%, black);
+  --color-gray-800: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-gray-900: color-mix(in srgb, var(--color-primary) 90%, black);
+  
+   
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+   
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-lighter: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+   
+  --color-text-muted: var(--color-gray-500);
+  --color-border-secondary: var(--color-gray-300);
+  --color-success: var(--color-second);
+  
+   
+  --color-bg: var(--color-white);
+  --color-bg-secondary: var(--color-gray-100);
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-700);
+  --color-border: var(--color-gray-300);
+}
+
+ 
+.dark {
+  --color-bg: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-bg-secondary: color-mix(in srgb, var(--color-primary) 30%, black);
+  --color-bg-tertiary: color-mix(in srgb, var(--color-primary) 40%, black);
+  --color-text-primary: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-300);
+  --color-border: var(--color-gray-700);
+  --color-text-muted: var(--color-gray-400);
+  --color-border-secondary: var(--color-gray-600);
+}
+</style>
+
+    
+    
+    
+      
+    
+    <link rel="stylesheet" href="/css/main.min.a9768c66f4ab5b07ba755892d3dd9f1a810cb666f1e517851a449d46561c542a.css?v=1766528610" data-version="1766528610">
+    <style>
+         
+        body {
+            visibility: hidden;
+        }
+        .dark body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">Ahmed Adel</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-8">
+        
+          
+                      
+            
+            <a href="/#experience" class="nav-link text-text-primary dark:text-text-primary">Experience</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#courses" class="nav-link text-text-primary dark:text-text-primary">Courses</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/blog/" class="nav-link text-text-primary dark:text-text-primary">Blog</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#about" class="nav-link text-text-primary dark:text-text-primary">About</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#contact" class="nav-link text-text-primary dark:text-text-primary">Contact</a>
+          
+          
+        
+        
+        
+        
+
+        
+        <div class="flex items-center space-x-4" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/aadel2010" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          
+          
+          <a href="https://github.com/aadel2010" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          
+        </div>
+        
+      </div>
+      <div class="lg:hidden flex items-center space-x-4">
+        
+        <button id="menu-btn" class="text-text-primary dark:text-text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      
+        
+          
+          <a href="/#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Experience
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#courses" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Courses
+          </a>
+        
+        
+      
+        
+          
+          <a href="/blog/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Blog
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            About
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contact
+          </a>
+        
+        
+      
+      
+      
+      
+
+      
+      <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2" data-animation="social">
+        <a href="https://www.linkedin.com/in/aadel2010" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/aadel2010" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    .group.open .submenu {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Navigation script loaded');
+      
+      const sectionLinks = document.querySelectorAll('.section-link');
+      console.log('Found section links:', sectionLinks.length);
+      const homePath = '\/';
+      
+      sectionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log('Section link clicked:', this.getAttribute('data-section'));
+          
+          const section = this.getAttribute('data-section');
+          const isHomePage = window.location.pathname === homePath || window.location.pathname === homePath + 'index.html' || window.location.pathname === homePath.replace(/\/$/, '');
+          console.log('Is home page:', isHomePage);
+          
+          if (isHomePage) {
+            
+            const targetElement = document.querySelector(section);
+            console.log('Target element found:', !!targetElement);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }
+          } else {
+            
+            console.log('Navigating to:', homePath + section);
+            window.location.href = homePath + section;
+          }
+        });
+      });
+      
+      
+      function handleHashScroll() {
+        console.log('Checking for hash:', window.location.hash);
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          console.log('Hash target element found:', !!targetElement);
+          if (targetElement) {
+            
+            setTimeout(() => {
+              console.log('Scrolling to hash target');
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }, 100);
+          }
+        }
+      }
+      
+      
+      handleHashScroll();
+      
+      
+      setTimeout(handleHashScroll, 500);
+      setTimeout(handleHashScroll, 1000);
+      
+      
+      window.addEventListener('hashchange', function() {
+        console.log('Hash changed to:', window.location.hash);
+        handleHashScroll();
+      });
+      
+      
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking hash');
+        setTimeout(handleHashScroll, 200);
+      });
+    });
+    
+    
+    document.querySelectorAll('.group > a.nav-link, .group > button.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const group = this.closest('.group');
+        const isOpen = group.classList.contains('open');
+
+        
+        document.querySelectorAll('.group').forEach(g => g.classList.remove('open'));
+
+        
+        if (!isOpen) {
+          group.classList.add('open');
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        const group = link.closest('.group');
+        if (!group.contains(event.target)) {
+          group.classList.remove('open');
+        }
+      });
+    });
+
+    
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
+    
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+
+  </script>
+</nav>
+
+
+
+
+    <div class="w-full h-16"></div>
+
+    <main class="flex-grow">
+        
+<section id="home" class="min-h-screen flex flex-col items-center justify-start md:flex-row md:items-center md:justify-center bg-bg-secondary  text-white relative overflow-hidden hero-section">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 mt-8 md:mt-0 w-full">
+      
+      <div class="lg:w-1/2 flex justify-center lg:justify-start mt-8 md:mt-0 lg:transform lg:-translate-y-8">
+        <div class="relative" data-animation="profile-image">
+          
+          <div class="relative">
+            <div class="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-primary p-1 shadow-2xl">
+              <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                <img 
+                  src="images/ahmed-adel-profile.jpg" 
+                  alt="Portrait of Ahmed Adel" 
+                  loading="lazy" 
+                  decoding="async" 
+                  class="object-cover w-full h-full rounded-full"
+                />
+              </div>
+            </div>
+
+            
+            <div class="absolute -bottom-4 -right-4" data-animation="location-badge">
+              <div class="flex items-center bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full shadow-xl border border-white/20 min-w-fit whitespace-nowrap">
+                <i class="fas fa-map-marker-alt mr-2 text-primary-light flex-shrink-0"></i>
+                <span class="font-semibold text-sm">🇳🇱 The Netherlands</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center lg:text-left mt-8 md:mt-0" style="width: 100%; max-width: 600px; min-width: 300px;">
+        
+        <div class="mb-4 mt-4 md:mt-0 hero-text-element" data-animation="greeting">
+          <span class="hero-text-accent font-medium text-lg block">Hello, I&#39;m</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-heading leading-tight hero-name hero-text-element" data-animation="name">
+          Ahmed Adel
+        </h1>
+        
+        <h2 class="text-2xl md:text-3xl lg:text-4xl mb-6 font-light hero-text-accent hero-text-element" data-animation="tagline">
+          <span class="typewriter" data-original-text="Embedded Software Engineer. C/C&#43;&#43;. RTOS. Bare-metal Programming. Parallel Programming. UML">Embedded Software Engineer. C/C&#43;&#43;. RTOS. Bare-metal Programming. Parallel Programming. UML</span>
+        </h2>
+        
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0 hero-text-muted leading-relaxed hero-text-element px-4 py-3 rounded-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(8px);" data-animation="description">
+          Embedded Software Engineer with 13&#43; years of experience in C/C&#43;&#43; development for bare-metal and RTOS-based systems, covering firmware and embedded applications across multiple engineering-driven industries.
+        </p>
+
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end hero-text-element" data-animation="buttons">
+          <a href="#contact" class="bg-bg text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hero-button button-hover">
+            Get in Touch
+          </a>
+        </div>
+        
+        <div class="flex justify-center lg:justify-end mt-8 mb-8 md:mb-0 hero-text-element" data-animation="social">
+          <div class="flex space-x-4 px-4 py-3 rounded-lg" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px);">
+            
+            <a href="https://www.linkedin.com/in/aadel2010/" target="_blank" rel="noopener noreferrer" class="text-white transition-transform duration-300 hover:scale-125">
+              <i class="fab fa-linkedin-in text-3xl"></i>
+            </a>
+            
+            <a href="https://github.com/aadel2010" target="_blank" rel="noopener noreferrer" class="text-white transition-transform duration-300 hover:scale-125">
+              <i class="fab fa-github text-3xl"></i>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section id="experience" class="py-12 bg-bg dark:bg-bg border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">Experience</h2>
+    <p class="text-lg text-center mb-12 text-gray-700 dark:text-text-tertiary italic"></p>
+
+    
+    <div class="text-center mb-12">
+      <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center">
+        
+        
+        
+        
+      </div>
+    </div>
+
+    
+    <div class="relative pt-4">
+      
+      <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 transform -translate-x-1/2 shadow-lg z-0 timeline-line"></div>
+
+      
+      <div class="space-y-8 md:space-y-16">
+        
+        <div class="relative timeline-item" data-animate>
+          
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>Aug 2021 - Present
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                
+                <div class="company-card bg-bg dark:bg-bg p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                  <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-2">
+                    
+                    <a href="https://www.asml.com" target="_blank" rel="noopener noreferrer" class="company-link group">
+                      ASML
+                      <i class="fas fa-external-link-alt ml-2 text-primary dark:text-primary-light opacity-0 text-sm"></i>
+                    </a>
+                    
+                  </h3>
+                  <h4 class="text-primary dark:text-white font-semibold text-lg mb-3">Senior Software Engineer</h4>
+                  
+                  
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    
+                    <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-industry mr-1"></i>Semiconductor Manufacuting
+                    </span>
+                    
+                    
+                    <span class="inline-flex items-center bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-map-marker-alt mr-1"></i>Veldhoven - The Netherlands
+                    </span>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  <p class="text-sm text-gray-700 dark:text-text-tertiary italic border-l-4 border-primary-light pl-3">
+                    ASML gives the world&#39;s leading chipmakers the power to mass produce patterns on silicon
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="md:w-1/2 px-4">
+              
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-3 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>Aug 2021 - Present
+              </div>
+              
+              <div class="achievements-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-tasks text-third dark:text-third-light mr-3 text-lg"></i>
+                  <h5 class="text-lg font-semibold text-text-primary dark:text-text-primary">Key Achievements</h5>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-text-secondary">
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Designed and implemented high-quality software for advanced semiconductor lithography systems, using C/C&#43;&#43;/Python within one of the largest code archives in the world (50M&#43; LoC).</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Drove the requirements analysis and design meetings for new software features in an Agile environment.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Acted as the technical interface between different stakeholders (product owners, project leaders, hardware teams, physics teams, and internal software teams) to resolve technical issues.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Performed code and documents review.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Established an internal documentation process for the team to improve the quality of the project’s documents.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Onboarded new hires to accelerate their adoption of the development environment and best practices.</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative timeline-item" data-animate>
+          
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>August 2018 - Aug 2021
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                
+                <div class="company-card bg-bg dark:bg-bg p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                  <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-2">
+                    
+                    <a href="https://si-vision.com" target="_blank" rel="noopener noreferrer" class="company-link group">
+                      Si-Vision
+                      <i class="fas fa-external-link-alt ml-2 text-primary dark:text-primary-light opacity-0 text-sm"></i>
+                    </a>
+                    
+                  </h3>
+                  <h4 class="text-primary dark:text-white font-semibold text-lg mb-3">Senior Embedded Software Team Lead</h4>
+                  
+                  
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    
+                    <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-industry mr-1"></i>IoT
+                    </span>
+                    
+                    
+                    <span class="inline-flex items-center bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-map-marker-alt mr-1"></i>Cairo, Egypt
+                    </span>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  <p class="text-sm text-gray-700 dark:text-text-tertiary italic border-l-4 border-primary-light pl-3">
+                    Si-Vision is a leading IP provider for high-performance, low power wireless-intellectual property (IP)
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="md:w-1/2 px-4">
+              
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-3 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>August 2018 - Aug 2021
+              </div>
+              
+              <div class="achievements-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-tasks text-third dark:text-third-light mr-3 text-lg"></i>
+                  <h5 class="text-lg font-semibold text-text-primary dark:text-text-primary">Key Achievements</h5>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-text-secondary">
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Reviewed design, code, and documentation for BLE link-layer and host software development activities.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Defined project plans, milestones, and delivery timelines, ensuring commitment to deadlines.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Reported project progress, risks, and dependencies to the software department manager.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Established and enforced a structured software development process to ensure consistency and quality.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Conducted annual performance reviews for direct reports, providing technical and career development feedback.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Led technical interviews and contributed to the design of assessment exams for new hires.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Delivered induction training and mentored junior engineers to accelerate their technical growth and onboarding.</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative timeline-item" data-animate>
+          
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>Jan 2017 - Aug 2018
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                
+                <div class="company-card bg-bg dark:bg-bg p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                  <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-2">
+                    
+                    <a href="https://si-vision.com" target="_blank" rel="noopener noreferrer" class="company-link group">
+                      Si-Vision
+                      <i class="fas fa-external-link-alt ml-2 text-primary dark:text-primary-light opacity-0 text-sm"></i>
+                    </a>
+                    
+                  </h3>
+                  <h4 class="text-primary dark:text-white font-semibold text-lg mb-3">Senior Embedded Software</h4>
+                  
+                  
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    
+                    <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-industry mr-1"></i>IoT
+                    </span>
+                    
+                    
+                    <span class="inline-flex items-center bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-map-marker-alt mr-1"></i>Cairo, Egypt
+                    </span>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  <p class="text-sm text-gray-700 dark:text-text-tertiary italic border-l-4 border-primary-light pl-3">
+                    Si-Vision is a leading IP provider for high-performance, low power wireless-intellectual property (IP)
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="md:w-1/2 px-4">
+              
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-3 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>Jan 2017 - Aug 2018
+              </div>
+              
+              <div class="achievements-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-tasks text-third dark:text-third-light mr-3 text-lg"></i>
+                  <h5 class="text-lg font-semibold text-text-primary dark:text-text-primary">Key Achievements</h5>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-text-secondary">
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Designed and implemented BLE 4.2 and 5.0 link-layer software features in compliance with Bluetooth SIG specifications.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Developed, maintained, and debugged a CI environment using Python and Jenkins, ensuring a robust quality gate for team-developed software.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Authored and maintained test cases aligned with Bluetooth SIG qualification requirements; debugged failing tests and automated test execution using Jenkins and scripting.</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative timeline-item" data-animate>
+          
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>May 2012 - Jan 2017
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                
+                <div class="company-card bg-bg dark:bg-bg p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                  <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-2">
+                    
+                    <a href="https://www.valeo.com" target="_blank" rel="noopener noreferrer" class="company-link group">
+                      Valeo
+                      <i class="fas fa-external-link-alt ml-2 text-primary dark:text-primary-light opacity-0 text-sm"></i>
+                    </a>
+                    
+                  </h3>
+                  <h4 class="text-primary dark:text-white font-semibold text-lg mb-3">Embedded Software Engineer</h4>
+                  
+                  
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    
+                    <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-industry mr-1"></i>Automotive
+                    </span>
+                    
+                    
+                    <span class="inline-flex items-center bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-map-marker-alt mr-1"></i>Giza, Egypt
+                    </span>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  <p class="text-sm text-gray-700 dark:text-text-tertiary italic border-l-4 border-primary-light pl-3">
+                    Valeo is a global automotive technology company specializing in advanced driver assistance systems (ADAS), electrification, connectivity, and smart mobility solutions
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="md:w-1/2 px-4">
+              
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-3 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>May 2012 - Jan 2017
+              </div>
+              
+              <div class="achievements-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-tasks text-third dark:text-third-light mr-3 text-lg"></i>
+                  <h5 class="text-lg font-semibold text-text-primary dark:text-text-primary">Key Achievements</h5>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-text-secondary">
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Designed, implemented, and documented bug fixes for surround-view vision systems used in BMW, Volkswagen, and Daimler automotive projects.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Executed unit and integration testing plans for a shared software framework used across multiple Valeo projects.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Automated integration testing by developing a C-based tool to parse test plans and execute them on real hardware.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Collaborated with the warranty team to analyze and resolve zero-kilometer (0-km) field issues.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Authored requirements, design, and test documentation, maintaining end-to-end traceability using IBM DOORS.</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="courses" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    
+    <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">Courses
+    </h2></a>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div
+        class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover"
+        data-animate>
+        <div class="project-inner">
+          
+          <div class="mb-4 text-center">
+            <a href="https://www.udemy.com/course/advanced-c-programming-z/?couponCode=66DF2581083E8B5A0668"><img src="images/courses-thumb/adv-c-course-thumbnail.jpg" alt="Advanced C Programming"
+                class="mb-4 mx-auto rounded-lg shadow-md"></a>
+            <h4 class="text-xl font-heading font-semibold text-text-primary dark:text-text-primary">Advanced C Programming
+              </h3>
+          </div>
+          
+          <div class="text-center text-sm mb-4"><span class="font-semibold">
+                <div class="star mt-1 flex gap-1 text-amber-400">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <svg viewBox="0 0 24 24" class="w-5 h-5 fill-amber-400">
+                    <path
+                      d="M12 .587l3.668 7.568L24 9.748l-6 5.848L19.335 24 12 19.897 4.665 24 6 15.596 0 9.748l8.332-1.593z" />
+                  </svg>
+                  
+                  <svg viewBox="0 0 24 24" class="w-5 h-5 fill-amber-400">
+                    <path
+                      d="M12 .587l3.668 7.568L24 9.748l-6 5.848L19.335 24 12 19.897 4.665 24 6 15.596 0 9.748l8.332-1.593z" />
+                  </svg>
+                  
+                  <svg viewBox="0 0 24 24" class="w-5 h-5 fill-amber-400">
+                    <path
+                      d="M12 .587l3.668 7.568L24 9.748l-6 5.848L19.335 24 12 19.897 4.665 24 6 15.596 0 9.748l8.332-1.593z" />
+                  </svg>
+                  
+                  <svg viewBox="0 0 24 24" class="w-5 h-5 fill-amber-400">
+                    <path
+                      d="M12 .587l3.668 7.568L24 9.748l-6 5.848L19.335 24 12 19.897 4.665 24 6 15.596 0 9.748l8.332-1.593z" />
+                  </svg>
+                  
+                  
+                  <svg viewBox="0 0 24 24" width="20" height="20">
+                    <defs>
+                      <linearGradient id="halfStar">
+                        <stop offset="50%" stop-color="currentColor" />
+                        <stop offset="50%" stop-color="transparent" />
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#halfStar)" stroke="currentColor" stroke-width="2"
+                      d="M12 .587l3.668 7.568L24 9.748l-6 5.848L19.335 24 12 19.897 4.665 24 6 15.596 0 9.748l8.332-1.593z" />
+                  </svg>
+                  
+                  
+                  <p>(4.6)</p>
+                </div>
+              </span></div>
+          
+          <div class="flex gap-4 mb-4 justify-center">
+            <div class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium"><i class="fas fa-clock mr-1"></i>8 hrs</div>
+            <div class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium"><i class="fas fa-users mr-1"></i>1690</div>
+            <div class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium"><i class="fas fa-coins mr-1"></i>$15</div>
+
+          </div>
+          
+          <div class="flex flex-wrap gap-6 justify-center">
+            <div class="flex flex-col items-center text-center">
+              
+              
+              <a href="https://www.udemy.com/course/advanced-c-programming-z/?couponCode=66DF2581083E8B5A0668" target="_blank" rel="noopener noreferrer"
+                class="flex items-center justify-center bg-gradient-primary text-white text-sm sm:text-lg px-4 sm:px-6 py-2 rounded-lg font-semibold shadow-lg w-auto sm:w-auto">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+<section id="about" class="py-12 bg-bg dark:bg-bg relative about-section" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary about-text-element">About Me</h2>
+    <div class="flex flex-col lg:flex-row mt-6 gap-4 lg:gap-8">
+      <div class="flex-1 about-text-element">
+        <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-4 lg:p-6 rounded-xl shadow-lg border border-border-primary dark:border-border-primary">
+          <p class="text-lg text-text-secondary dark:text-text-secondary leading-relaxed">
+            I’m an Embedded Software Engineer with 13+ years of experience designing and delivering reliable, production-grade C/C++ firmware and applications — from bare-metal systems to RTOS-based platforms (FreeRTOS, Zephyr) — across automotive, IoT, and industrial domains. <br><br> I specialize in building robust embedded software that ships, scales, and lasts, drawing on deep hands-on expertise with microcontrollers, microprocessors, operating systems, and complex system integration. <br><br> Through this site, I share practical, real-world insights on embedded software engineering via technical blog posts, and I offer online courses focused on building solid, industry-ready skills. I’m always open to connecting with fellow engineers, technical leaders, and teams working on challenging embedded systems. Feel free to reach out.
+          </p>
+          <div class="mt-6">
+            <a href="https://www.linkedin.com/in/aadel2010/details/recommendations" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gradient-primary text-white px-4 py-2 rounded-lg shadow-lg about-button button-hover">
+              <i class="fab fa-linkedin-in mr-3 text-lg"></i> 
+              See Testimonials on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-4 lg:p-6 rounded-xl shadow-lg border border-border-primary dark:border-border-primary about-card card-hover">
+        <div class="flex items-center justify-between mb-6 border-b border-border-primary dark:border-border-primary pb-3">
+          <h3 class="text-xl font-semibold font-heading text-text-primary dark:text-text-primary flex items-center about-text-element">
+            <i class="fas fa-info-circle mr-3 text-primary dark:text-white"></i>
+            Quick Facts
+          </h3>
+        </div>
+        <div class="space-y-2">
+          
+            
+              <div class="flex items-start quick-fact-card about-text-element py-2 lg:py-3 px-3 lg:px-4 rounded-xl">
+                <i class="fas fa-briefcase text-primary dark:text-white text-lg mr-3"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 dark:text-text-primary mb-1 text-lg">Current Role</h4>
+                  
+                  
+                  
+                  
+                  
+                  
+                    <p class="text-gray-700 dark:text-text-tertiary text-base leading-relaxed">Senior Software Engineer at <a href="https://asml.com" target="_blank" rel="noopener noreferrer"><strong>ASML</strong></a></p>
+                  
+                </div>
+              </div>
+            
+              <div class="flex items-start quick-fact-card about-text-element py-2 lg:py-3 px-3 lg:px-4 rounded-xl">
+                <i class="fas fa-graduation-cap text-primary dark:text-white text-lg mr-3"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 dark:text-text-primary mb-1 text-lg">Education</h4>
+                  
+                  
+                  
+                  
+                  
+                  
+                    <p class="text-gray-700 dark:text-text-tertiary text-base leading-relaxed"><ul>
+<li><a href="https://iti.gov.eg/" target="_blank" rel="noopener noreferrer">- Information Technology Institute</a>, <strong>Embedded Systems</strong><br>- <a href="https://www.mans.edu.eg/en/" target="_blank" rel="noopener noreferrer">Mansoura University</a>, <strong>B.Sc of Electronics and Communications Engineering</strong></li>
+</ul>
+</p>
+                  
+                </div>
+              </div>
+            
+          
+        </div>
+      </div>
+    </div>
+
+  
+  
+  <div id="aboutModal" class="fixed inset-0 bg-bg bg-opacity-50 z-50 hidden items-center justify-center px-4 py-16">
+    <div class="bg-bg dark:bg-bg rounded-xl shadow-2xl w-full max-w-5xl lg:max-w-6xl max-h-[70vh] lg:max-h-[80vh] overflow-y-auto sidebar-scroll">
+      <div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary">About Ahmed Adel</h3>
+          <button id="closeAboutModal" class="text-text-muted text-text-secondary dark:text-text-muted text-2xl font-bold">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="space-y-6 text-text-secondary dark:text-text-secondary">
+          <p class="text-lg leading-relaxed">I’m an Embedded Software Engineer with 13+ years of experience designing and delivering reliable, production-grade C/C++ firmware and applications — from bare-metal systems to RTOS-based platforms (FreeRTOS, Zephyr) — across automotive, IoT, and industrial domains. <br><br> I specialize in building robust embedded software that ships, scales, and lasts, drawing on deep hands-on expertise with microcontrollers, microprocessors, operating systems, and complex system integration. <br><br> Through this site, I share practical, real-world insights on embedded software engineering via technical blog posts, and I offer online courses focused on building solid, industry-ready skills. I’m always open to connecting with fellow engineers, technical leaders, and teams working on challenging embedded systems. Feel free to reach out.</p>
+          <p class="text-lg leading-relaxed"></p>
+
+          <div class="bg-gradient-primary-lighter p-6 rounded-xl border border-primary-light">
+            <h4 class="text-xl font-semibold mb-3 text-primary-dark flex items-center">
+              <i class="fas fa-heart mr-3 text-second"></i>
+              
+            </h4>
+            <p class="text-primary-dark leading-relaxed"></p>
+          </div>
+
+          <p class="text-lg leading-relaxed"></p>
+          <p class="text-lg leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('aboutModal');
+  const modalBtn = document.getElementById('aboutModalBtn');
+  const closeBtn = document.getElementById('closeAboutModal');
+
+  
+  modalBtn.addEventListener('click', function() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+
+  
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+
+  
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+});
+</script>
+
+  
+<section id="contact" class="py-12 bg-bg-secondary dark:bg-bg-primary border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">Let's Connect</h2>
+
+    <div class="flex flex-col lg:flex-row justify-center gap-12">
+      
+      <div class="lg:w-1/2">
+        <div class="contact-card bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+          <h3 class="text-xl font-semibold mb-6 text-text-primary dark:text-text-primary">Send me a message</h3>
+          <form id="contact-form" action="https://formspree.io/f/mbdroywe" method="POST" class="space-y-6">
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <div class="flex-1">
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" required>
+              </div>
+              <div class="flex-1">
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" required>
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Subject</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" required>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus-ring-primary border-primary dark:bg-bg dark:text-text-primary" required></textarea>
+            </div>
+                        <div class="text-center">
+              <button type="submit" class="bg-gradient-primary text-white px-6 py-3 rounded-lg font-medium shadow-lg button-hover">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      
+      <div class="lg:w-1/2">
+        
+        <div class="contact-card bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary h-full card-hover">
+          <h3 class="text-xl font-semibold mb-6 text-text-primary dark:text-text-primary">Contact Information</h3>
+          <p class="mb-6 text-gray-700 dark:text-text-secondary">Let&#39;s connect! I&#39;m always interested in hearing about new projects and opportunities.</p>
+          <div class="markdown-content text-gray-700 dark:text-text-secondary">
+          
+          </div>
+          <div class="space-y-4">
+            
+
+            
+            <div class="flex items-start">
+              <div class="bg-primary-lighter dark:bg-primary-dark p-3 rounded-full mr-4">
+                <i class="fab fa-linkedin-in text-primary dark:text-primary-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/aadel2010" target="_blank" class="text-primary dark:text-white">linkedin.com/in/aadel2010</a>
+              </div>
+            </div>
+            
+
+            
+            <div class="flex items-start">
+              <div class="bg-primary-lighter dark:bg-primary-dark p-3 rounded-full mr-4">
+                <i class="fab fa-github text-primary dark:text-primary-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">GitHub</h4>
+                <a href="https://github.com/aadel2010" target="_blank" class="text-primary dark:text-white">github.com/aadel2010</a>
+              </div>
+            </div>
+            
+
+            
+
+            
+            <div class="flex items-start">
+              <div class="bg-primary-lighter dark:bg-primary-dark p-3 rounded-full mr-4">
+                <i class="fas fa-map-marker-alt text-primary dark:text-primary-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">Location</h4>
+                <p class="text-gray-700 dark:text-text-tertiary">🇳🇱 The Netherlands</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="mt-8">
+            <h4 class="font-medium mb-3 text-text-primary dark:text-text-primary"></h4>
+            <div class="flex flex-wrap gap-2">
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">C/C&#43;&#43;</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">Python</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">FreeRTOS</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">ZephyrRTOS</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">Linux</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">Bluetooth Low Energy</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">UML</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">Requirements Engineering</span>
+              
+              <span class="collab-tag px-3 py-1 rounded-full text-sm">Training and Coaching</span>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  
+  
+    
+  
+  
+      
+  
+  
+      
+  
+  
+  
+  
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</script>
+
+
+  
+
+
+    </main>
+
+    <footer class="bg-bg-primary dark:bg-bg-primary text-text-primary py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <a href="/#home" class="text-xl font-bold text-text-primary font-heading">Ahmed Adel</a>
+        <p class="text-text-secondary dark:text-text-muted mt-1">Embedded Software Engineer. C/C&#43;&#43;. RTOS. Bare-metal Programming. Parallel Programming. UML</p>
+        <p class="text-text-secondary dark:text-text-muted mt-2">Embedded Software Engineer with 13&#43; years of experience in C/C&#43;&#43; development for bare-metal and RTOS-based systems, covering firmware and embedded applications across multiple engineering-driven industries.</p>
+        <p class="text-text-secondary dark:text-text-muted mt-1">
+          <i class="fas fa-map-marker-alt mr-2"></i>🇳🇱 The Netherlands
+        </p>
+        <a href="mailto:" class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
+          <i class="fas fa-envelope mr-2"></i>
+        </a>
+        <div class="flex space-x-8 mt-6" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/aadel2010/" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://github.com/aadel2010" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="flex flex-wrap gap-2 justify-end">
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">C/C&#43;&#43;</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Python</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">FreeRTOS</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">ZephyrRTOS</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Linux</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Bluetooth Low Energy</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">UML</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Requirements Engineering</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Training and Coaching</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-border-primary text-center text-text-secondary dark:text-text-muted text-sm">
+      <p>© 2025 | Ahmed Adel</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    
+    
+    
+    
+      
+      
+      
+      
+    
+    
+
+
+
+
+<div id="pexels-config" data-queries="[&#34;universe solar systems nasa pictures&#34;,&#34;structural long span bridges&#34;,&#34;nebula nasa pictures&#34;]" style="display: none;"></div>
+
+<script>
+  
+  window.PEXELS_API_KEY = null; 
+  
+  
+  const configElement = document.getElementById('pexels-config');
+  if (configElement) {
+    try {
+      window.PEXELS_QUERIES = JSON.parse(configElement.getAttribute('data-queries'));
+    } catch (error) {
+      console.error('Error parsing Pexels queries from config.toml:', error);
+      
+      window.PEXELS_QUERIES = [];
+    }
+  } else {
+    console.error('Pexels config element not found');
+    window.PEXELS_QUERIES = [];
+  }
+
+  
+  async function fetchConfig() {
+    try {
+      
+      const apiUrl = window.location.hostname === 'localhost' 
+        ? 'http://localhost:3001/api/config' 
+        : '/api/config';
+        
+      const response = await fetch(apiUrl);
+      if (response.ok) {
+        const config = await response.json();
+        window.PEXELS_API_KEY = config.pexelsApiKey;
+        window.FORMSPREE_ENDPOINT = config.formspreeEndpoint;
+        console.log('Configuration loaded securely');
+      } else {
+        console.warn('Failed to load configuration, using fallback');
+      }
+    } catch (error) {
+      console.warn('Error loading configuration:', error);
+    }
+  }
+
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fetchConfig);
+  } else {
+    fetchConfig();
+  }
+</script>
+
+    
+
+<script>
+  
+  window.HUGO_COLOR_PALETTES = [
+    
+    {
+      name: "professional",
+      main_color: "#474A51",
+      second_color: "#1eff00ff",
+      third_color: "#5c76f9ff"
+    }
+    
+  ];
+  
+  
+  if (window.HUGO_COLOR_PALETTES && window.HUGO_COLOR_PALETTES.length > 0) {
+    console.log('🎨 Using color palettes from Hugo config:', window.HUGO_COLOR_PALETTES.length, 'palettes');
+  }
+</script>
+
+    <script src="/js/scripts.min.b6e79814155cf02c33cf809dde2d11276e3a6e63f9671f039a78ce333e82ecbe.js"></script>
+    <script src="/js/dynamic-colors.min.6a387c448192ede54f610667cc57e48efd8a1b5a4ff417cee74f1860886f5e25.js"></script>
+    <script src="/js/gsap-animations.min.83c6891f40b08e252df6934b0717216964dea399bedf01cdfa27efee9afdee35.js"></script>
+    <script src="/js/pexels-background.min.835eba7b5059213b507b840f8bf9c4ab88bf17926d75ae80443487bf661d0f41.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+
+    
+    <script>
+        
+        document.documentElement.classList.add('dark');
+
+        
+        window.addEventListener('load', function() {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+</body>
+</html>
