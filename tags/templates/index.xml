@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Templates on Ahmed Adel</title>
-    <link>https://aadel2010.github.io/blog/tags/templates/</link>
+    <link>https://www.a-adel.net/tags/templates/</link>
     <description>Recent content in Templates on Ahmed Adel</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://aadel2010.github.io/blog/tags/templates/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.a-adel.net/tags/templates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mixing C&#43;&#43; Template Specialization with Non-template Overloads - Who Wins ?</title>
-      <link>https://aadel2010.github.io/blog/blog/mixing-cpp-template-specialization-with-overloads/</link>
+      <link>https://www.a-adel.net/blog/mixing-cpp-template-specialization-with-overloads/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://aadel2010.github.io/blog/blog/mixing-cpp-template-specialization-with-overloads/</guid>
-      <description>&lt;p&gt;As C++ developers, we often use overloaded functions when we have different logic to handle different types of data, so we write a separate implementation per type. The down-side of this approach is that we don’t have a fallback implementation that applies as a default to the types for which we don’t have implementation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://aadel2010.github.io/blog/blog/mixing-cpp-template-specialization-with-overloads/1.png&#34; alt=&#34;Code&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;That’s why we have template functions. Templates are used when we have the same logic to handle different types of data. If we need to handle all the types with the same logic, except a few types that must be handled with a different logic, then we use template specialization.&lt;/p&gt;</description>
+      <guid>https://www.a-adel.net/blog/mixing-cpp-template-specialization-with-overloads/</guid>
+      <description>&lt;p&gt;As C++ developers, we often use overloaded functions when we have different logic to handle different types of data, so we write a separate implementation per type. The down-side of this approach is that we don’t have a fallback implementation that applies as a default to the types for which we don’t have implementation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.a-adel.net/blog/mixing-cpp-template-specialization-with-overloads/1.png&#34; alt=&#34;Code&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;That’s why we have template functions. Templates are used when we have the same logic to handle different types of data. If we need to handle all the types with the same logic, except a few types that must be handled with a different logic, then we use template specialization.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
